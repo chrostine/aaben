@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/themes/light.css" />
+  <script type="module"
+    src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/shoelace-autoloader.js"></script>
+  <meta charset="utf-8" />
+  <script src="libraries/p5.min.js"></script>
+  <script src="libraries/p5.plotSvg.js"></script>
+</head>
+
+<body>
+  <div id="container">
+    <div id="nav">
+      <p>Beskrivelse</p>
+      <div>
+        <sl-input id="navn" placeholder="Øllens navn" maxlength="30" size="small" pill></sl-input>
+        <sl-input id="keywords" placeholder="Smagsnoter" maxlength="10" size="small" pill></sl-input>
+        <sl-input id="stil" placeholder="Stilart" maxlength="15" size="small" pill></sl-input>
+      </div>
+      <p>Input data</p>
+      <div>
+        <sl-input id="color" placeholder="Farve" maxlength="15" size="small" pill></sl-input>
+        <sl-input id="bitter" placeholder="Bitterhed" maxlength="15" size="small" pill></sl-input>
+        <sl-input id="alkohol" placeholder="Alkoholprocent" maxlength="15" size="small" pill></sl-input>
+      </div>
+      <p>Tweak</p>
+      <div>
+        <sl-range label="Seed" id="seed" min="1" max="500" value="4" step="1"></sl-range>
+        <sl-range label="Antal" id="antal" min="4" max="400" value="4" step="1"></sl-range>
+        <sl-range label="Størrelse" id="size" min="0" max="25" value="10" step="1"></sl-range>
+        <sl-range label="Rounded corners" id="rounded" min="5" max="50" value="10" step="1"></sl-range>
+        <sl-range label="Effekt" id="effekt" min="0" max="25" value="10" step="1"></sl-range>
+      </div>
+      <sl-button id="create" variant="primary">Create label</sl-button>
+    </div>
+    <div id="main"></div>
+  </div>
+  <script src="controls.js"></script>
+  <script src="sketch.js"></script>
+</body>
+
+</html>

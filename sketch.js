@@ -1,7 +1,7 @@
 let kolonner = 16;
 let rækker = 10;
 let antal = kolonner;
-let size = 10;
+let size = 60;
 let seed = 0;
 
 function setup() {

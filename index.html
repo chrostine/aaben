@@ -31,14 +31,17 @@
       <div>
         <sl-range label="Seed" id="seed" min="1" max="500" value="4" step="1"></sl-range>
         <sl-range label="Antal" id="antal" min="4" max="400" value="4" step="1"></sl-range>
-        <sl-range label="Størrelse" id="size" min="0" max="25" value="10" step="1"></sl-range>
-        <sl-range label="Rounded corners" id="rounded" min="5" max="50" value="10" step="1"></sl-range>
+        <sl-range label="Størrelse" id="size" min="1" max="5" value="1" step="0.1"></sl-range>
+        <sl-range label="Bredde" id="bredde" min="10" max="100" value="70" step="1"></sl-range>
+        <sl-range label="Hojde" id="hojde" min="10" max="100" value="50" step="1"></sl-range>
+        <sl-range label="Rounded corners" id="rounded" min="5" max="25" value="20" step="1"></sl-range>
         <sl-range label="Effekt" id="effekt" min="0" max="25" value="10" step="1"></sl-range>
       </div>
       <sl-button id="create" variant="primary">Create label</sl-button>
     </div>
     <div id="main"></div>
   </div>
+  <script src="stilart.js"></script>
   <script src="controls.js"></script>
   <script src="sketch.js"></script>
 </body>
